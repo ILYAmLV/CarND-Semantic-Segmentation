@@ -9,7 +9,7 @@
 
 The goal of this project is to build a Fully Convolutional Neural Network based on the model originally created by Oxford's Visual Geometry Group (VGG). The FCN is trained on the **`Kitti Road dataset`** provided by `www.cvlibs.net`. The FCN is then used to label pixels in images as either road (green pixels) or not road (default pixels). 
 
-## Trainng the FCN
+## Training the FCN
 
 The FCN consists of two classes - "road" and "not road", `tf.truncated_normal_initializer` with a scalar of 0.01 is used for kernel initialization and `tf.contrib.layers.l2_regularizer` with a scale of 0.001 is used for kernel regularization. 
 
@@ -57,7 +57,7 @@ The FCN consists of two classes - "road" and "not road", `tf.truncated_normal_in
     return deconv_3
 ```
 
-Keep_probabilty is set to 0.5 to prevent overfitting and the learing rate is set to 0.0001. After some trial and error i have settled on 30 epochs with a batch size of 5 (trained in 800 seconds with the trainig loss of 0.023 by the last epoch).
+Keep_probabilty is set to 0.5 to prevent overfitting and the learning rate is set to 0.0001. After some trial and error, I have settled on 30 epochs with a batch size of 5 (trained in 800 seconds with the training loss of 0.023 by the last epoch).
 
 <p align="center">
     <img src="./imgs/img1.png" width="960">
