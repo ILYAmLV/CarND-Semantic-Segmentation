@@ -57,7 +57,7 @@ The FCN consists of two classes - "road" and "not road", `tf.truncated_normal_in
     return deconv_3
 ```
 
-Keep_probabilty is set to 0.5 to prevent overfitting and the learing rate is set to 0.0001. After some trial and error i have settled on 30 epochs with a batch size of 5 (trained in 800 seconds with the trainig loss of 0.019 by the last epoch).
+Keep_probabilty is set to 0.5 to prevent overfitting and the learing rate is set to 0.0001. After some trial and error i have settled on 30 epochs with a batch size of 5 (trained in 800 seconds with the trainig loss of 0.023 by the last epoch).
 
 <p align="center">
     <img src="./imgs/img1.png" width="960">
