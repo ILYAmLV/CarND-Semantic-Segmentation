@@ -64,6 +64,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     discarded and re-drawn. This is the recommended initializer for neural network weights and filters.
 
     """
+    # model implementation inspired by GitHub user jeremy-shannon
     # 1x1 convolution of layer 7
     conv_7 = tf.layers.conv2d(
         vgg_layer7_out, num_classes, 1, 1, 'SAME',
